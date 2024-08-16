@@ -273,7 +273,8 @@ function getGoogleSheetData() {
 ### Write data to sheet
 ```javascript
 function writeCells() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const spreadsheetUrl = "https://docs.google.com/spreadsheets/d/1Md9HX6fHkG_OGVpveXPpKm63KeGEuZF9JbdTADu5DSw/edit?gid=0#gid=0";
+  var sheet = SpreadsheetApp.openByUrl(spreadsheetUrl).getActiveSheet();
   var date = new Date();
 
   // getRange(a1Notation) - a single cell
