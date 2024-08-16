@@ -53,7 +53,7 @@ function sendGmail() {
   const senderName = "Tri-Thong";
   const receiverEmailAddress = "tri-thong.tran@mile.cloud";
   const ccPeople = "trithong12@gmail.com,trithong12vn@gmail.com";
-  const mailSubject = "Current Time";
+  const mailSubject = "Hello GWS! - Current Time";
   const mailStrBody = "The time is: " + now.toString();
   GmailApp.sendEmail(
     receiverEmailAddress,
@@ -74,7 +74,7 @@ function sendGmail() {
   const senderName = "Tri-Thong";
   const receiverEmailAddress = "tri-thong.tran@mile.cloud";
   const ccPeople = "trithong12@gmail.com,trithong12vn@gmail.com";
-  const mailSubject = "Current Time";
+  const mailSubject = "Hello GWS! - Current Time";
   const mailStrBody = "The time is: " + now.toString();
   const mailHtmlBody = `
   <!DOCTYPE html>
