@@ -19,6 +19,9 @@
   - [Get all sheets](#get-all-sheets)
   - [Get sheet data](#get-sheet-data)
   - [Write data to sheet](#write-data-to-sheet)
+- [Properties Service](#properties-service)
+  - [Get Script Properties](#get-script-properties)
+  - [Set Script Properties](#set-script-properties)
 ---
 
 ## Gmail
@@ -288,5 +291,32 @@ function writeCells() {
     ["D", "E", "F"],
     ["G", "H", "I"]
   ])
+}
+```
+---
+## Properties Service
+### Get Script Properties
+```javascript
+function getScriptProperty() {
+  // Get the ScriptProperties object
+  var scriptProperties = PropertiesService.getScriptProperties();
+  
+  // Retrieve a script-wide property
+  var value = scriptProperties.getProperty('myKey');
+  
+  Logger.log('Retrieved script property: myKey = ' + value);
+}
+```
+
+### Set Script Properties
+```javascript
+function setScriptProperty() {
+  // Get the ScriptProperties object
+  var scriptProperties = PropertiesService.getScriptProperties();
+  
+  // Set a script-wide property
+  scriptProperties.setProperty('myKey', 'myValue');
+  
+  Logger.log('Script property set: myKey = myValue');
 }
 ```
