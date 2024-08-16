@@ -22,7 +22,7 @@
 ---
 
 ## Gmail
-<em>Reference: [https://developers.google.com/apps-script/reference/gmail/gmail-app](https://developers.google.com/apps-script/reference/gmail/gmail-app)</em>
+<em>Reference: [https://developers.google.com/apps-script/reference/gmail](https://developers.google.com/apps-script/reference/gmail)</em>
 
 ### Query mail threads from Gmail
 ```javascript
@@ -105,7 +105,7 @@ function sendGmail() {
 ---
 
 ## Google Calendar
-<em>Reference: [https://developers.google.com/apps-script/reference/calendar/calendar-app](https://developers.google.com/apps-script/reference/calendar/calendar-app)</em>
+<em>Reference: [https://developers.google.com/apps-script/reference/calendar](https://developers.google.com/apps-script/reference/calendar)</em>
 
 ### Get Calendar events
 ```javascript
@@ -153,7 +153,7 @@ function getAllCalendars() {
 ---
 
 ## Google Drive
-<em>Reference: [https://developers.google.com/apps-script/reference/drive/drive-app](https://developers.google.com/apps-script/reference/drive/drive-app)</em>
+<em>Reference: [https://developers.google.com/apps-script/reference/drive](https://developers.google.com/apps-script/reference/drive)</em>
 ### Get all files
 ```javascript
 function getFiles() {
@@ -240,7 +240,7 @@ function addFileIntoFolder(folder, file) {
 ---
 
 ## Google Sheets
-<em>Reference: [https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app)</em>
+<em>Reference: [https://developers.google.com/apps-script/reference/spreadsheet](https://developers.google.com/apps-script/reference/spreadsheet)</em>
 ### Get all sheets
 ```javascript
 function listAllSheets() {
