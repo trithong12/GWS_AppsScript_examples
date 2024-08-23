@@ -60,7 +60,7 @@ function parseNews(html) {
 
     // Loop through each <a> tag inside the <ul>
     while ((aMatch = aRegex.exec(ulContent)) !== null) {
-      const url = 'https://tw.news.yahoo.com' + aMatch[1]; // Append base URL if needed
+      const url = aMatch[1]; // Append base URL if needed
       const title = aMatch[2].replace(/<[^>]+>/g, ''); // Clean HTML tags from the title
 
       // Add to the newsItems array if the link and title are valid
@@ -113,10 +113,10 @@ function gemini(range, prompt) {
     const response = UrlFetchApp.fetch(GEMINI_API_URL, options);
     const json = JSON.parse(response.getContentText());
 
-    return json.candidates[0].content.parts[0].text || 'Summary unavailable.';
+    return json.candidates[0].content.parts[0].text || 'Prompt response unavailable.';
   } catch (error) {
-    Logger.log(`Error summarizing content: ${error}`);
-    return 'Error retrieving summary.';
+    Logger.log(`Error: ${error}`);
+    return 'Error retrieving prompt response.';
   }
 }
 ```
